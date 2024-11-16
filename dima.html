@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="dima.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+h1{
+
+    text-align:center;
+}
+h2{
+    text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+}
+
+.card {
+  box-shadow:8px 8px 8px #444;
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:teal;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+
+
+}
+body{
+  background:lavender;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.bima{
+  border-radius:50%;
+}
+
+.mike{
+  background-image:url("mike.jpg");
+background-size:100% 100%;
+  color: white;
+  width:100%;
+  height:400px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  height: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size:20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+}
+img{
+  border:1px solid black;
+  height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin:5px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <img src="dima.jpeg" width="50" height="50" style="border-radius: 50px;float:left;margin:none;">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Contact</a>
+    <a href="#contact">Location</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<div style="padding-left:20px">
+  <h1>DIMA VENTURES</h1>
+<h2>Catering and General Services</h2>
+<hr>
+<div class="about-section">
+    <h1 style="font-size:40px;">Who We Are</h1>
+    <p>Dima2020 Ventures is a wholly owned Ghanaian Company. We are suppliers of Consumables and Non-Consumables (Office Stationary, Food Items, Safety products, toiletries, Cleaning chemicals and general supplies), we make supplies to the following institutions: Offices, Catering companies, Restaurants, Hotels, Hospitals, Schools and individual household with quality products.</p>
+    <p>We aim to offer smart and high quality solutions to our customers.
+        At Dima2020 Ventures we are Specialized in Consumables & Non- Consumables Supply as well as Ship and store supply</p>
+  </div>
+  
+  <h2 style="text-align:center">OUR CORE VALUES</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="dima4.jpg" alt="Jane" style="width:100%;height: 200px;">
+        <div class="container">
+          <h2> Our Mission</h2>
+          <p>Our primary mission is to maximize Availability and competitiveness of products Whiles ensuring good customer services
+        </p>
+          
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="dima5.jpg" alt="Mike" style="width:100%;height:200px;">
+        <div class="container">
+          <h2>Our Vision</h2>
+      
+          <p>Our primary vision is to be a leading brand in supply needs of Firms or Organizations in Ghana.</p>
+      
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="jj.jpg" alt="John" style="width:100%;height:200px;">
+        <div class="container">
+          <h2>Our Philosophy</h2>
+         
+          <p><li>Establish strong, professional client relationship.</li><li> Consistent and high quality product delivery.</li><li> Focus on developing our business strategy.</li></p>
+      
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="dima10.jpg" alt="John" style="width:100%;height: 200px;">
+        <div class="container">
+          <h2>Mission Statement</h2>
+         
+          <p><li>To ensure that our client receive prompt, professional, friendly, and courteous services at all times.</li>
+            <li>To offer competitive price for our services.</li>
+           <li> To ensure that our products and services have no</li>
+            <li>or minimal impact on the environment.</li></p>
+      
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="success.jpg" alt="John" style="width:100%;height: 200px;">
+        <div class="container">
+          <h2>Keys to Success</h2>
+         
+          <p>
+            <li>Quality products and friendly services.</li>
+           <li> Maintaining existing loyal customer base.</li>
+            <li>Creating a positive relationship within the company..</li></p>
+      
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="choose.jpg" alt="John" style="width:100%;height:200px;">
+        <div class="container">
+          <h2>Reasons
+            why you should choose us;</h2>
+         
+          <p style="font-style:bold"><b>Our location, the business model we are operating on (Supply services and online store), varieties of payment options, wide range of product and our excellent customer culture will definitely count as a strong strength for Dima2020 ventures.
+            The fact that we are going to be operating our goods and services in one of the busiest streets in Ghana provides us with unlimited opportunities to sell our products to a large number of people.</b></p>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<div class="bro">
+  <h1 style="font-size:40px;">Payment Option</h1>
+  <h2>At Dima2020 Ventures, Our payment policy is all inclusive because we are quite aware that different people prefer different payment options as it suits them. Here are the payment options that will be available in any of our outlets;</h2>
+  <ul>
+    <li>Payment by cash</li>
+    <li>Payment via online bank transfer</li>
+    <li>Pay via MM(Mobile Money)</li>
+    <li>Pay with cheque from local customers</li>
+  </ul>
+  <h2>
+    In view of the above, we have chosen banking platforms that will help us achieve our payment plans without any itches
+  </h2>
+</div>
+<br>
+<hr>
+<h2>Safety Equipment  Gudget in stock</h2>
+
+<h4>All Products we supply are seen down below</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gloves1.jpg">
+      <img src="gloves1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Gloves</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="work.jpg">
+      <img src="work.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Reflector</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="011.jpg">
+      <img src="011.jpg"Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Safety Boots</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mk.jpg">
+      <img src="mk.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Safety Helmet</div>
+  </div>
+</div>
+<br>
+<br>
+<hr>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="headset.jpg">
+      <img src="headset.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">construction headphones</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mask3.jpg"">
+      <img src="mask3.jpg" alt="Mountains" width="600" height="200">
+    </a>
+    <div class="desc">Safety Mask</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="book.jpg">
+      <img src="book.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Books and learning stuffs</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="guggles.jpg">
+      <img src="guggles.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"> 
+      Safety Goggles</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p></p>
+</div>
+<h1>Janitorial and Groceries Products we have in stock</h1>
+<div class="responsive">
+
+  <div class="gallery">
+    <a target="_blank" href="tom.jpg">
+      <img src="tom.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mob.png">
+      <img src="mob.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Wash room brushes for cleaning and other purposes</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="jen.jpg">
+      <img src="jen.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Home cleaning tools and equipment</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="omo.webp">
+      <img src="omo.webp" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Washing power for washing</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Contact:+233(0) 54 138 4566 or +233(0) 54 413 1479<p>
+    <p>Mail:Infodima2020@gmail.com
+    </p>
+    <p>Location:Oyibi Ayensu Estate,12 Streat,
+      Hse No. 142 Oyibi -Dodowa Road, Ghana, Accra.</p>
+  
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Sep 2021 12:34:00 GMT -->
+</html>
